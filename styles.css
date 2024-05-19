@@ -96,23 +96,47 @@ body {
     color: #f72585;
 }
 
-.btn {
+.acessar {
     width: 100%;
+
+}
+.sair{
+    padding: .3rem;
+    border-radius: .2rem;
+    text-decoration: none;
+}
+.btn{
     background-color: #f72585;
     color: #fff;
     font-size: 14px;
     font-weight: 600;
     border: none !important;
-    transition: all linear 160ms;
+    transition: all linear 0.16s;
     cursor: pointer;
     margin: 0 !important;
-
 }
 
 .btn:hover {
-    transform: scale(1.02);
+    transform: scale(1.05);
     background-color: #ff0676;
 
+}
+.status{
+    display: none;
+}
+.sucesso {
+    display:contents ;
+}
+.cabecalho{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem 1rem;
+    background-color: black;
+}
+.cabecalho h2{
+    font-size: 12px;
 }
 
 @media screen and (max-width: 768px){
