@@ -14,7 +14,24 @@ body {
     font-family: 'Montserrat', sans-serif;
     color: #023047
 }
-
+.tituloCliente {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 50px;
+}
+.legendaCliente {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 50px;
+}
 .container_box {
     display: flex;
     flex-direction: column;
@@ -41,7 +58,9 @@ body {
 .areaLogin img {
     width: 420px;
 }
-
+.centralizar{
+   text-align: center;
+}
 .formLogin h1 {
     padding: 0;
     margin: 0;
@@ -70,9 +89,9 @@ body {
     display: flex;
     gap: 1rem;
 }
-.campo{
+.criar-usuario{
     display: flex;
-    flex-direction: column ;
+    gap: 1rem;
 }
 
 .formLogin input:focus {
@@ -91,7 +110,10 @@ body {
     color: #555;
     transition: all linear 160ms;
 }
-
+.criar-usuario {
+    justify-content: center;
+    align-items: center;
+}
 .formLogin a:hover {
     color: #f72585;
 }
@@ -116,6 +138,19 @@ body {
     margin: 0 !important;
 }
 
+.criar{
+    background-color: #f72585;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    border: none !important;
+    transition: all linear 0.16s;
+    cursor: pointer;
+    margin: 0 !important;
+    padding: 15px;
+    width: 100%;
+}
+
 .btn:hover {
     transform: scale(1.05);
     background-color: #ff0676;
@@ -125,8 +160,31 @@ body {
     display: none;
 }
 .sucesso {
-    display:contents ;
-}
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #4caf50;
+    align-items: center;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 4px;
+    margin-top: 20px;
+    }
+.erro {
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    background-color: #f72585;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    font-weight: 600;
+    border-radius: 4px;
+    margin-top: 20px;
+    }
+
 .cabecalho{
     color: white;
     display: flex;
@@ -137,6 +195,11 @@ body {
 }
 .cabecalho h2{
     font-size: 12px;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
 }
 
 @media screen and (max-width: 768px){
