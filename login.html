@@ -5,34 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tela de Login</title>
     <link rel="stylesheet" href="./styles.css">
-    <script src="./js/script.js" defer></script>
+    <script src="./script.js" defer></script>
 </head>
 <body>
     <header>
        
     </header>
+
     <main>
         <div class="container_box">
-            <form method="Post" class="formLogin" onsubmit="return validaLogin(idEmail,idSenha,event)">
+            <form method="Post" class="formLogin" onsubmit="return false">
                 <h1>Área do Cliente</h1>
                 <p>Digite os seus dados de acesso no campo abaixo.</p>
                 <div class="acesso">
                     <div class="campo">
-                        <label for="email">E-mail</label>
-                        <input name="txtEmail" type="email" placeholder="Digite seu e-mail" autofocus="true" required/>
+                        <label for="idEmail">E-mail</label>
+                        <input name="txtEmail" type="email" id="idEmail" placeholder="Digite seu e-mail"/>
                     </div>
                     <div class="campo">
-                        <label for="password">Senha</label>
-                        <input name="txtSenha" type="password" placeholder="Digite sua senha" required/>
+                        <label for="idSenha">Senha</label>
+                        <input name="txtSenha" type="password" id="idSenha" placeholder="Digite sua senha">
                     </div>
                 </div>
-                <a href="/">Esqueci minha senha</a>
-                <p class="status"></p>
                 <input type="submit" value="Acessar" class="btn acessar" />
+                <div>
+                    <p class="valida"></p>
+                    <div class = "centralizar">
+                        <h1>Criar Usuário</h1>
+                        <p>Caso não tenha se registrado, registre-se!</p>
+                    </div>
+                        <div class="criar-usuario">
+                        <div class="campo">
+                            <label for="idNome">Nome</label>
+                            <input name="txtNome" type="text" id="idNome" placeholder="Digite seu nome"/>
+                        </div>
+                        <div class="campo">
+                            <label for="idEmailC">E-mail</label>
+                            <input name="txtEmail" type="email" id="idEmailC" placeholder="Digite seu e-mail"/>
+                        </div>
+                        </div>
+                        <div class="campo">
+                            <label for="idSenhaC">Senha</label>
+                            <input name="txtSenha" type="password" id="idSenhaC" placeholder="Digite sua senha"/>
+                        </div>
+                        <input type="submit" value="Criar" class="btn criar"/>
+                        <p class="valida2"></p>
+                    </div>
             </form>
         </div>
     </main>
     <footer>
     </footer>
 </body>
-</html>
